@@ -43,8 +43,6 @@ describe('Phase #4', () => {
 
     context('after delete is executed:', () => {
       it('when finding all cats, the deleted cat is no longer listed', async () => {
-
-
         if (stopTestOnError(client, createError, otherError)) return;
         const query = `SELECT cats.name
                        FROM cats

@@ -1,9 +1,9 @@
-DROP TABLE IF EXISTS owners;
-DROP TABLE IF EXISTS cats;
+PRAGMA foreign_keys=on; -- Turns foreign key support in SQLite3 on
+
 DROP TABLE IF EXISTS cat_owners;
 DROP TABLE IF EXISTS toys;
-
-PRAGMA foreign_keys=on; -- Turns foreign key support in SQLite3 on
+DROP TABLE IF EXISTS cats;
+DROP TABLE IF EXISTS owners;
 
 CREATE TABLE owners(
   id INTEGER PRIMARY KEY AUTOINCREMENT,
